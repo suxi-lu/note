@@ -1,5 +1,11 @@
 # nexus docker service 布署  
 
+#### 准备工作
+
+<pre><code>
+[root nexus]$ mkdir nexus-data && chown -R 200 nexus-data
+</code></pre>
+
 #### 目录说明  
 
 <pre><code>
