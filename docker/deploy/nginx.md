@@ -28,6 +28,11 @@ server {
 }
 </code></pre>
 
+*docker network create*  
+<pre><code>
+docker network create -d overlay --gateway 10.0.6.1 --subnet 10.0.6.0/24 learn-network
+</code></pre>
+
 *docker-compose.yml*
 
 <pre><code>

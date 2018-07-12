@@ -48,7 +48,7 @@ log-error=/var/log/mysqld.log
 pid-file=/var/run/mysqld/mysqld.pid
 </code></pre>
 
-*创建 docker network*  
+*docker network create*  
 <pre><code>
 docker network create -d overlay --gateway 10.0.6.1 --subnet 10.0.6.0/24 learn-network
 </code></pre>
