@@ -1,13 +1,13 @@
 # ss
 和谐上网
 
-1. 首先准备一台香港服务器
-2. 安装服务，这里以centos为例（https://github.com/shadowsocks/shadowsocks/wiki）
+* 首先准备一台香港服务器
+* 安装服务，这里以centos为例（https://github.com/shadowsocks/shadowsocks/wiki）  
 <pre><code>
 $ yum install python-setuptools && easy_install pip
 $ pip install shadowsocks
 </code></pre>
-3. 添加配置文件/etc/shadowsocks.json
+* 添加配置文件/etc/shadowsocks.json
 <pre><code>
 {
     "server":"my_server_ip", # 0.0.0.0
@@ -20,8 +20,8 @@ $ pip install shadowsocks
     "fast_open": false
 }
 </code></pre>
-4. 测试是否可以成功启动<code>ssserver -c /etc/shadowsocks.json</code>
-5. 后台运行
+* 测试是否可以成功启动<code>ssserver -c /etc/shadowsocks.json</code>
+* 后台运行
 <pre><code>
 $ ssserver -c /etc/shadowsocks.json -d start
 $ ssserver -c /etc/shadowsocks.json -d stop

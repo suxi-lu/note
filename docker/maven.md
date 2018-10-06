@@ -22,3 +22,4 @@ $ ps -ef|grep docker
 ---
 
 maven 配置
+* [deploy](../linux/maven.md) 查看对应maven相关配置
