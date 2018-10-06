@@ -9,3 +9,5 @@
 6. [elasticsearch](elasticsearch.md)
 7. [kibana](kibana.md)
 8. [logstash](logstash.md)
+
+9. [mantisbt](mantisbt.md)
