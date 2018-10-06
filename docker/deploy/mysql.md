@@ -80,5 +80,5 @@ networks:
 
 *启动命令*
 <pre><code>
-docker stack deploy -c docker-compose.yml mysql
+$ docker stack deploy -c docker-compose.yml mysql
 </code></pre>

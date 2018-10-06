@@ -35,5 +35,5 @@ networks:
 
 *启动命令*
 <pre><code>
-docker stack deploy -c docker-compose.yml redis
+$ docker stack deploy -c docker-compose.yml redis
 </code></pre>

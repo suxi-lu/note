@@ -58,5 +58,5 @@ services:
 
 *启动命令*
 <pre><code>
-docker stack deploy -c docker-compose.yml nginx
+$ docker stack deploy -c docker-compose.yml nginx
 </code></pre>

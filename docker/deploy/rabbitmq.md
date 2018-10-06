@@ -45,5 +45,5 @@ networks:
 
 *启动命令*
 <pre><code>
-docker stack deploy -c docker-compose.yml rabbitmq
+$ docker stack deploy -c docker-compose.yml rabbitmq
 </code></pre>

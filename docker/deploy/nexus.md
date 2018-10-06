@@ -42,7 +42,7 @@ networks:
 *test.sh*
 
 <pre><code>
-curl -u admin:admin123 http://127.0.0.1:18081/service/metrics/ping
+$ curl -u admin:admin123 http://127.0.0.1:18081/service/metrics/ping
 </code></pre>
 
 安装成功后执行<code>$ ./test.sh</code>返回<code>pong</code>说明安装成功  
