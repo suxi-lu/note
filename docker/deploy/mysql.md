@@ -64,7 +64,8 @@ services:
     ports:
       - "3306:3306"
     volumes: 
-      - $PWD/conf/my.cnf:/etc/mysql/mysql.conf.d
+      #- $PWD/conf/my.cnf:/etc/mysql/my.cnf    # 5.7配置
+      - $PWD/conf/my.cnf:/etc/mysql/mysql.conf.d    # 8.*配置
       #- ./log:/var/log
       - $PWD/data:/var/lib/mysql
     environment:
