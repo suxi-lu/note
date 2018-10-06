@@ -7,7 +7,7 @@
 ---- conf
 ------ my.cnf
 ---- data
--- docker-compose.yml
+---- docker-compose.yml
 </code></pre>
 
 *my.cnf*

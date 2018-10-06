@@ -11,8 +11,8 @@
 <pre><code>
 -# nexus
 ---- nexus-data (建议目录不要更换其他名称)
--- docker-compose.yml
--- test.sh
+---- docker-compose.yml
+---- test.sh
 </code></pre>
 
 *docker network create*

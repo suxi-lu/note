@@ -5,7 +5,7 @@
 <pre><code>
 -# rabbitmq
 ---- data
--- docker-compose.yml
+---- docker-compose.yml
 </code></pre>
 
 *docker network create*  

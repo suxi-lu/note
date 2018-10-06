@@ -7,7 +7,7 @@
 ---- conf
 ------ blog.conf
 ---- log
--- docker-compose.yml
+---- docker-compose.yml
 </code></pre>
 
 *blog.conf*

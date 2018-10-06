@@ -5,7 +5,7 @@
 <pre><code>
 -# redis
 ---- data
--- docker-compose.yml
+---- docker-compose.yml
 </code></pre>
 
 *docker network create*  
