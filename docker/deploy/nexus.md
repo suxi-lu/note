@@ -45,5 +45,10 @@ networks:
 $ curl -u admin:admin123 http://127.0.0.1:18081/service/metrics/ping
 </code></pre>
 
-安装成功后执行<code>$ ./test.sh</code>返回<code>pong</code>说明安装成功  
+*启动命令*
+<pre><code>
+$ docker stack deploy -c docker-compose.yml elasticsearch
+</code></pre>
+
+启动成功后执行<code>$ ./test.sh</code>返回<code>pong</code>说明启动成功  
 访问<code>http://ip:port</code>仓库管理页面
