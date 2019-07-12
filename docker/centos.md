@@ -4,7 +4,7 @@
 * docker pull centos  
 
 #### Docker启动CentOS镜像
-* docker run --privileged --name=hdfs1 --network=bridge -p 10122:22 -p 9870:9870 -dit -m 2GB centos /usr/sbin/init
+* docker run --privileged --name=hdfs1 --network=bridge -p 10122:22 -p 9870:9870 -p 9864:9864 -dit -m 2GB centos /usr/sbin/init
 
 #### 进入CentOS镜像容器
 * docker exec -it hdfs1 bash  
