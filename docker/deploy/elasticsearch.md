@@ -22,7 +22,6 @@ version: '3.4'
 services:
   elasticsearch:
     image: elasticsearch:latest
-    #restart: always
     ports:
       - "19200:9200"
       - "19300:9300"

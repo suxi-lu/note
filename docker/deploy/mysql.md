@@ -60,7 +60,6 @@ version: '3.4'
 services:
   mysql:
     image: mysql:latest
-    #restart: always
     ports:
       - "3306:3306"
     volumes: 

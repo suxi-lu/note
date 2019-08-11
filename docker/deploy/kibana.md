@@ -19,7 +19,6 @@ version: '3.4'
 services:
   kibana:
     image: kibana:latest
-    #restart: always
     ports:
       - "15601:5601"
     environment:
