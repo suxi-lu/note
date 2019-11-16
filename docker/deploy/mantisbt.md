@@ -1,4 +1,4 @@
-# mantisbt docker service 布署(建议使用5.7mysql版本)  
+# mantisbt docker service 部署(建议使用5.7mysql版本)  
 
 #### 目录说明  
 

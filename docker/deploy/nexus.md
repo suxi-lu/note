@@ -1,4 +1,4 @@
-# nexus docker service 布署  
+# nexus docker service 部署  
 
 #### 准备工作
 

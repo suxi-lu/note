@@ -1,4 +1,4 @@
-# mongo docker service 布署  
+# mongo docker service 部署  
 
 #### 目录说明  
 

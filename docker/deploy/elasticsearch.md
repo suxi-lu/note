@@ -1,4 +1,4 @@
-# elasticsearch docker service 布署  
+# elasticsearch docker service 部署  
 
 #### 目录说明  
 

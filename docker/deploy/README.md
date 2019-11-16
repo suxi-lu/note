@@ -1,4 +1,4 @@
-### docker service 布署文档  
+### docker service 部署文档  
 
 1. [mysql](mysql.md)
 2. [redis](redis.md)

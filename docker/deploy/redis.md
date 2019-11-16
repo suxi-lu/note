@@ -1,4 +1,4 @@
-# redis docker service 布署
+# redis docker service 部署
 
 #### 目录说明  
 
