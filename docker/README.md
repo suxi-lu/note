@@ -1,9 +1,9 @@
 # docker
 学习笔记
 
-1. [deploy](deploy) service 学习笔记
-1. [centos](centos.md) centos
-1. [maven](remote.md) maven 仓库部署
+1. [deploy 学习笔记](deploy)
+2. [centos](centos.md)
+3. [maven 仓库部署](remote.md)
 
 1. 普通用户执行docker  
 <pre><code>
