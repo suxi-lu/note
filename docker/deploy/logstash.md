@@ -1,4 +1,4 @@
-# logstash docker service 布署(待完善)  
+# logstash docker service 部署(待完善)  
 
 *启动命令*
 <pre><code>

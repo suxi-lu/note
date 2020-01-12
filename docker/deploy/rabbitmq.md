@@ -1,4 +1,4 @@
-# rabbitmq docker service 布署  
+# rabbitmq docker service 部署  
  
 #### 目录说明  
 

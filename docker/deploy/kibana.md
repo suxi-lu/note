@@ -1,4 +1,4 @@
-# kibana docker service 布署  
+# kibana docker service 部署  
 
 #### 目录说明  
 

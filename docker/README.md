@@ -1,8 +1,10 @@
 # docker
 学习笔记
 
-* [deploy](deploy) service 学习笔记
-* [tls](tls.md) 配置远程api tls访问
+1. [deploy 学习笔记](deploy)
+2. [centos](centos.md)
+3. [maven 仓库部署](remote.md)
+4. [tls](tls.md) 配置远程api tls访问
 
 1. 普通用户执行docker  
 <pre><code>
