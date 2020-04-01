@@ -1,4 +1,4 @@
-# rabbitmq docker service 布署  
+# rabbitmq docker service 部署  
  
 #### 目录说明  
 
@@ -20,7 +20,6 @@ version: '3.4'
 services:
   rabbitmq:
     image: rabbitmq:management
-    #restart: always
     ports:
       - "5671:5671"
       - "5672:5672"

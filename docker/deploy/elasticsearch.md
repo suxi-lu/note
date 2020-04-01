@@ -1,4 +1,4 @@
-# elasticsearch docker service 布署  
+# elasticsearch docker service 部署  
 
 #### 目录说明  
 
@@ -22,7 +22,6 @@ version: '3.4'
 services:
   elasticsearch:
     image: elasticsearch:latest
-    #restart: always
     ports:
       - "19200:9200"
       - "19300:9300"

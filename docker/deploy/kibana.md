@@ -1,4 +1,4 @@
-# kibana docker service 布署  
+# kibana docker service 部署  
 
 #### 目录说明  
 
@@ -19,7 +19,6 @@ version: '3.4'
 services:
   kibana:
     image: kibana:latest
-    #restart: always
     ports:
       - "15601:5601"
     environment:

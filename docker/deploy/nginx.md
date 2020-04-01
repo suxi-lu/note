@@ -1,4 +1,4 @@
-# nginx docker service 布署  
+# nginx docker service 部署  
 
 #### 目录说明  
 

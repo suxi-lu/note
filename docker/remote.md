@@ -1,7 +1,7 @@
 # docker 配置远程访问
 
 1、主要是在[Service]这个部分，加上下面参数  
-`vi /usr/lib/systemd/system/docker.service`
+vi /usr/lib/systemd/system/docker.service
 
 <pre><code>
 [Service]
@@ -18,8 +18,3 @@ $ systemctl restart docker
 <pre><code>
 $ ps -ef|grep docker
 </code></pre>
-
----
-
-maven 配置
-* [deploy](../linux/maven.md) 查看对应maven相关配置

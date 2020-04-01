@@ -1,4 +1,4 @@
-# centos 布署并添加ssh远程访问
+# centos 部署并添加ssh远程访问
 
 #### 使用Docker下载CentOS镜像
 * docker pull centos  

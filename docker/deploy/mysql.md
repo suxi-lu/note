@@ -1,4 +1,4 @@
-# mysql docker service 布署  
+# mysql docker service 部署  
 
 #### 目录说明  
 
@@ -60,7 +60,6 @@ version: '3.4'
 services:
   mysql:
     image: mysql:latest
-    #restart: always
     ports:
       - "3306:3306"
     volumes: 
