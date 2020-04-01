@@ -1,7 +1,7 @@
 # docker 配置远程访问
 
 1、主要是在[Service]这个部分，加上下面参数  
-vi /usr/lib/systemd/system/docker.service
+`vi /usr/lib/systemd/system/docker.service`
 
 <pre><code>
 [Service]
