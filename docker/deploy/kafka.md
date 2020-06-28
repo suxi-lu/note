@@ -13,7 +13,6 @@
 version: '3.4'
 services:
   zookeeper:
-    #image: wurstmeister/zookeeper
     image: zookeeper:3.6.1
     ports:
       - "2181:2181"
