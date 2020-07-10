@@ -19,8 +19,14 @@ services:
     ports:
       - "18081:8081"
     command: jobmanager
+    volumes:
+      - /host/path/to/job/artifacts:/opt/flink/usrlib
     environment:
-      - JOB_MANAGER_RPC_ADDRESS=jobmanager
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        parallelism.default: 3
+        
   taskmanager:
     image: flink:1.10.1-scala_2.12
     expose:
@@ -29,10 +35,16 @@ services:
     depends_on:
       - jobmanager
     command: taskmanager
+    volumes:
+      - /host/path/to/job/artifacts:/opt/flink/usrlib
     links:
       - "jobmanager:jobmanager"
     environment:
-      - JOB_MANAGER_RPC_ADDRESS=jobmanager
+      - |
+        FLINK_PROPERTIES=
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 3
+        parallelism.default: 3
 </code></pre>
 
 *启动命令*
