@@ -6,3 +6,4 @@
 3. [vim 操作基础](vim.md)
 4. [ssh 远程主机免密登录](ssh-free.md)
 5. [ss 和谐上网](ss.md)
+6. [gpg 密钥生成](gpg.md)
