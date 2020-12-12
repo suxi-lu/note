@@ -14,7 +14,7 @@ $ gpg --list-keys
 
 * 上传公钥  
 ```
-$ gpg --keyserver hkp://pool.sks-keyservers.net --send-keys <key>
+$ gpg --keyserver hkps://keys.openpgp.org --send-keys <key>
 ```
 
 * 格式化 key 为 long 类型  
