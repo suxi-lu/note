@@ -1,15 +1,17 @@
-# kafka docker service 部署  
+# kafka docker service 部署
 
-#### 目录说明  
+## 目录说明
 
-<pre><code>
+```text
+
 -# kafka
 ---- docker-compose.yml
-</code></pre>
+```
 
-*docker-compose.yml*
+_docker-compose.yml_
 
-<pre><code>
+```text
+
 version: '3.4'
 services:
   zookeeper:
@@ -22,7 +24,7 @@ services:
       - "9092:9092"
     environment:
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
-      KAFKA_ADVERTISED_HOST_NAME: <hostname>
+      KAFKA_ADVERTISED_HOST_NAME: 
       KAFKA_CREATE_TOPICS: "test:1:1"
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
@@ -35,9 +37,12 @@ services:
       KAFKA_BROKERCONNECT: kafka:9092
       JVM_OPTS: "-Xms32M -Xmx64M"
       SERVER_SERVLET_CONTEXTPATH: "/"
-</code></pre>
+```
 
-*启动命令*
-<pre><code>
+_启动命令_
+
+```text
+
 $ docker-compose up -d
-</code></pre>
+```
+

@@ -1,23 +1,27 @@
-# elasticsearch docker service 部署  
+# elasticsearch docker service 部署
 
-#### 目录说明  
+## 目录说明
 
-<pre><code>
+```text
+
 -# elasticsearch
 ---- conf
 ---- data
 ---- log
 ---- docker-compose.yml
-</code></pre>
+```
 
-*docker network create*  
-<pre><code>
+_docker network create_
+
+```text
+
 docker network create -d overlay --gateway 10.0.7.1 --subnet 10.0.7.0/24 elk-network
-</code></pre>
+```
 
-*docker-compose.yml*
+_docker-compose.yml_
 
-<pre><code>
+```text
+
 version: '3.4'
 services:
   elasticsearch:
@@ -41,16 +45,19 @@ services:
       http.cors.allow-origin: "*"
       transport.host: 0.0.0.0
       transport.tcp.port: 19300
-      network.publish_host: <host>
+      network.publish_host: 
     networks:
       - elk-network
 networks:
   elk-network:
     external: 
       name: elk-network
-</code></pre>
+```
 
-*启动命令*
-<pre><code>
+_启动命令_
+
+```text
+
 $ docker stack deploy -c docker-compose.yml elasticsearch
-</code></pre>
+```
+

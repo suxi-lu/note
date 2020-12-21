@@ -1,11 +1,10 @@
 # kubernetes
+
 学习笔记
 
----
-1. [namespace](namespace) 
-2. [authentication](authentication) (未完成)
-3. [nfs](nfs) (未完成)
+1. [namespace](namespace.md) 
+2. [authentication](authentication.md) \(未完成\)
+3. [nfs](nfs.md) \(未完成\)
+4. [redis 部署](redis.md) \(单节点部署\)
+5. [mysql 部署](mysql.md) \(单节点部署\)
 
----
-1. [redis 部署](redis) (单节点部署)
-2. [mysql 部署](mysql) (单节点部署)

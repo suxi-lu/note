@@ -1,22 +1,26 @@
-# mantisbt docker service 部署(建议使用5.7mysql版本)  
+# mantisbt docker service 部署\(建议使用5.7mysql版本\)
 
-#### 目录说明  
+## 目录说明
 
-<pre><code>
+```text
+
 -# mysql
 ---- config
 ---- custom
 ---- docker-compose.yml
-</code></pre>
+```
 
-*docker network create*  
-<pre><code>
+_docker network create_
+
+```text
+
 docker network create -d overlay --gateway 10.0.6.1 --subnet 10.0.6.0/24 learn-network
-</code></pre>
+```
 
-*docker-compose.yml*
+_docker-compose.yml_
 
-<pre><code>
+```text
+
 version: '3.4'
 services:
   php-mantisbt:
@@ -33,9 +37,12 @@ networks:
   learn-network:
     external: 
       name: learn-network
-</code></pre>
+```
 
-*启动命令*
-<pre><code>
+_启动命令_
+
+```text
+
 $ docker stack deploy -c docker-compose.yml mantisbt
-</code></pre>
+```
+

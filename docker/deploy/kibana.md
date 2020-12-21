@@ -1,20 +1,24 @@
-# kibana docker service 部署  
+# kibana docker service 部署
 
-#### 目录说明  
+## 目录说明
 
-<pre><code>
+```text
+
 -# kibana
 ---- docker-compose.yml
-</code></pre>
+```
 
-*docker network create*  
-<pre><code>
+_docker network create_
+
+```text
+
 docker network create -d overlay --gateway 10.0.7.1 --subnet 10.0.7.0/24 elk-network
-</code></pre>
+```
 
-*docker-compose.yml*
+_docker-compose.yml_
 
-<pre><code>
+```text
+
 version: '3.4'
 services:
   kibana:
@@ -22,16 +26,19 @@ services:
     ports:
       - "15601:5601"
     environment:
-      ELASTICSEARCH_URL: http://<host>:<port>
+      ELASTICSEARCH_URL: http://:
     networks:
       - elk-network
 networks:
   elk-network:
     external: 
       name: elk-network
-</code></pre>
+```
 
-*启动命令*
-<pre><code>
+_启动命令_
+
+```text
+
 $ docker stack deploy -c docker-compose.yml kibana
-</code></pre>
+```
+

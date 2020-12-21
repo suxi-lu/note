@@ -1,15 +1,17 @@
-# flink docker service 部署  
+# flink docker service 部署
 
-#### 目录说明  
+## 目录说明
 
-<pre><code>
+```text
+
 -# flink
 ---- docker-compose.yml
-</code></pre>
+```
 
-*docker-compose.yml*
+_docker-compose.yml_
 
-<pre><code>
+```text
+
 version: '3.4'
 services:
   jobmanager:
@@ -26,7 +28,7 @@ services:
         FLINK_PROPERTIES=
         jobmanager.rpc.address: jobmanager
         parallelism.default: 3
-        
+
   taskmanager:
     image: flink:1.10.1-scala_2.12
     expose:
@@ -45,9 +47,12 @@ services:
         jobmanager.rpc.address: jobmanager
         taskmanager.numberOfTaskSlots: 3
         parallelism.default: 3
-</code></pre>
+```
 
-*启动命令*
-<pre><code>
+_启动命令_
+
+```text
+
 $ docker-compose up -d
-</code></pre>
+```
+

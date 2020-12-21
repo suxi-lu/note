@@ -1,28 +1,33 @@
-# nexus docker service 部署  
+# nexus docker service 部署
 
-#### 准备工作
+## 准备工作
 
-<pre><code>
+```text
+
 [root nexus]$ mkdir nexus-data && chown -R 200 nexus-data
-</code></pre>
+```
 
-#### 目录说明  
+## 目录说明
 
-<pre><code>
+```text
+
 -# nexus
 ---- nexus-data (建议目录不要更换其他名称)
 ---- docker-compose.yml
 ---- test.sh
-</code></pre>
+```
 
-*docker network create*
-<pre><code>
+_docker network create_
+
+```text
+
 docker network create -d overlay --gateway 10.0.26.1 --subnet 10.0.26.0/24 nexus-network
-</code></pre>
+```
 
-*docker-compose.yml*
+_docker-compose.yml_
 
-<pre><code>
+```text
+
 version: '3.4'
 services:
   nexus:
@@ -37,18 +42,22 @@ networks:
   nexus-network:
     external: 
       name: nexus-network
-</code></pre>
+```
 
-*test.sh*
+_test.sh_
 
-<pre><code>
+```text
+
 $ curl -u admin:admin123 http://127.0.0.1:18081/service/metrics/ping
-</code></pre>
+```
 
-*启动命令*
-<pre><code>
+_启动命令_
+
+```text
+
 $ docker stack deploy -c docker-compose.yml nexus
-</code></pre>
+```
 
-启动成功后执行<code>$ ./test.sh</code>返回<code>pong</code>说明启动成功  
-访问<code>http://ip:port</code>仓库管理页面
+启动成功后执行`$ ./test.sh`返回`pong`说明启动成功  
+访问[`http://ip:port`](http://ip:port)仓库管理页面
+

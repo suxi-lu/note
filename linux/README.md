@@ -1,4 +1,5 @@
 # linux
+
 学习笔记
 
 1. [java 配置](java.md)
@@ -7,3 +8,4 @@
 4. [ssh 远程主机免密登录](ssh-free.md)
 5. [ss 和谐上网](ss.md)
 6. [gpg 密钥生成](gpg.md)
+

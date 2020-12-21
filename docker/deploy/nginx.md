@@ -1,18 +1,20 @@
-# nginx docker service 部署  
+# nginx docker service 部署
 
-#### 目录说明  
+## 目录说明
 
-<pre><code>
+```text
+
 -# nginx
 ---- conf
 ------ blog.conf
 ---- log
 ---- docker-compose.yml
-</code></pre>
+```
 
-*blog.conf*
- 
-<pre><code>
+_blog.conf_
+
+```text
+
 server {
     listen       80;
     server_name  blog.suxilu.cn;
@@ -26,16 +28,19 @@ server {
         root   /usr/share/nginx/html;
     }
 }
-</code></pre>
+```
 
-*docker network create*  
-<pre><code>
+_docker network create_
+
+```text
+
 docker network create -d overlay --gateway 10.0.6.1 --subnet 10.0.6.0/24 learn-network
-</code></pre>
+```
 
-*docker-compose.yml*
+_docker-compose.yml_
 
-<pre><code>
+```text
+
 version: '3.4'
 services:
   nginx:
@@ -54,9 +59,12 @@ services:
 #  learn-network:
 #    external: 
 #      name: learn-network
-</code></pre>
+```
 
-*启动命令*
-<pre><code>
+_启动命令_
+
+```text
+
 $ docker stack deploy -c docker-compose.yml nginx
-</code></pre>
+```
+
