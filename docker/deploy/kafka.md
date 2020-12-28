@@ -10,7 +10,7 @@
 
 _docker-compose.yml_
 
-```text
+```yml
 
 version: '3.4'
 services:

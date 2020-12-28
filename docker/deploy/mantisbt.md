@@ -19,7 +19,7 @@ docker network create -d overlay --gateway 10.0.6.1 --subnet 10.0.6.0/24 learn-n
 
 _docker-compose.yml_
 
-```text
+```yml
 
 version: '3.4'
 services:

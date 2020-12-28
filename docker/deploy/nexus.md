@@ -26,7 +26,7 @@ docker network create -d overlay --gateway 10.0.26.1 --subnet 10.0.26.0/24 nexus
 
 _docker-compose.yml_
 
-```text
+```yml
 
 version: '3.4'
 services:

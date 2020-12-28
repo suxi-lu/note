@@ -20,7 +20,7 @@ docker network create -d overlay --gateway 10.0.7.1 --subnet 10.0.7.0/24 elk-net
 
 _docker-compose.yml_
 
-```text
+```yml
 
 version: '3.4'
 services:
